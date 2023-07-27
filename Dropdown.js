@@ -12,7 +12,6 @@ import React, {useState} from 'react';
 
 const Dropdown = ({
   data = [],
-  Lable,
   alignList = {},
   fontSize = {},
   transparent = {},
@@ -97,19 +96,7 @@ const Dropdown = ({
 export default Dropdown;
 
 const styles = StyleSheet.create({
-  dropDownStyle: {
-    paddingVertical: 4,
-    paddingHorizontal: 8,
-    borderRadius: 3,
-    minHeight: 32,
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 8,
-    borderColor: '#000',
-    borderWidth: 0.5,
-    overflow: 'visible',
-  },
+
 
   selectedItemStyle: {
     paddingVertical: 8,
