@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, {useState} from 'react';
-import Dropdown from 'react-native-option-dropdown'
+// import Dropdown from 'react-native-option-dropdown'
+import Dropdown from './Dropdown'
+
 
 const App = () => {
     const [selectedItem, setSelectedItem] = useState(null);
@@ -32,6 +34,26 @@ const App = () => {
           data={data}
           onSelect={onSelect}
           value={selectedItem}
+          transparent ={false}
+          alignList={'center'}
+          fontSize={20}
+          defaultText={"Please Select"}
+          animationType={'slide'}
+          DropdownWidth={'50%'}
+          dropDownStyle ={
+            {paddingVertical: 4,
+            paddingHorizontal: 8,
+            borderRadius: 3,
+            minHeight: 32,
+            justifyContent: 'space-between',
+            flexDirection: 'row',
+            alignItems: 'center',
+            marginBottom: 8,
+            borderColor: '#000',
+            borderWidth: 0.5,
+          overflow:'scroll',
+          }
+          }
         />
     </View>
   )
